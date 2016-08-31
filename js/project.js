@@ -3,7 +3,7 @@ $("#status").change(function() {
 
   if (status.substr(0, 6) == "/giphy") {
     var myQuery = status.substr(7);
-    var jsonURL = "http://api.giphy.com/v1/gifs/search?q=" + myQuery + "&api_key=dc6zaTOxFJmzC";
+    var jsonURL = "//api.giphy.com/v1/gifs/search?q=" + myQuery + "&api_key=dc6zaTOxFJmzC";
 
     $.getJSON(jsonURL, function(response) {
 
